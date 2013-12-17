@@ -335,7 +335,6 @@ static int __init bcm4330_bluetooth_init(void)
 	gpio_rev_init();
     printk(KERN_ERR "[BT] bcm4330_bluetooth_init \n");
 	platform_device_register(&msm_bluesleep_device);
-	bluesleep_setup_uart_port(&msm_device_uart_dm1);
 #endif
 	return platform_driver_register(&bcm4330_bluetooth_platform_driver);
 }
