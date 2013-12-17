@@ -17,7 +17,7 @@ bldpur=${txtbld}$(tput setaf 5) # purple
 bldpnk=${txtbld}$(tput bold ; tput setaf 5) # pink
 bldcya=${txtbld}$(tput setaf 6) # cyan
 txtrst=$(tput sgr0) # Reset
-DEFCONFIG=cyanogenmod_hercules_defconfig
+DEFCONFIG=cyanogenmod_quincyatt_defconfig
 
 export KERNELDIR=~/android/kernel/
 export INITRAMFS_DEST=~/android/kernel/usr/initramfs
