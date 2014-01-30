@@ -1,17 +1,3 @@
-ui_print("                                        ");
-ui_print(" _|    _|  _|_|_|    _|_|_|_|  _|_|_|   ");
-ui_print(" _|    _|  _|    _|  _|        _|    _| ");
-ui_print(" _|    _|  _|_|_|    _|_|_|    _|_|_|   ");
-ui_print(" _|    _|  _|    _|  _|        _|    _| ");
-ui_print(" _|    _|  _|    _|  _|        _|    _| ");
-ui_print("   _|_|    _|_|_|    _|_|_|_|  _|    _| "); 
-ui_print("                                        "); 
-ui_print("                  BY                    ");
-ui_print("                                        ");                                        
-ui_print("           /  |  _)|_/ _ _  _ _         ");  
-ui_print("           \__| __)| \(-| )(-|          ");
-ui_print("                                        ");
-
 ifelse(is_mounted("/system") == "/system", unmount("/system"));
 mount("ext4", "EMMC", "/dev/block/mmcblk0p24", "/system");
 show_progress(0.250000, 0);
@@ -36,5 +22,5 @@ run_program("/tmp/fix_permissions.sh");
 delete("/tmp/fix_permissions.sh");
 ui_print("Unmounting partitions");
 unmount("/system");
-ui_print("Your Kernel is now AWESOME!!!");
+ui_print("Done.");
 ui_print(" ");
